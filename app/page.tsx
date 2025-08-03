@@ -15,14 +15,13 @@ import {
   Instagram,
   Lightbulb,
   Mail,
-  Menu,
   Paintbrush,
   Phone,
   Search,
   Shield,
   Truck,
   Wrench,
-  Zap,
+  Zap
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -107,14 +106,14 @@ export default function FMPremiumCarsLanding() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
               <div className="space-y-6">
-                <h1 className="text-4xl sm:text-5xl lg:text-4xl font-racing text-white leading-tight  tracking-tight">
+                <h1 className="text-2xl sm:text-4xl lg:text-5xl font-racing text-white leading-tight tracking-tight">
                   IMPORTACIÓN DE COCHES
                   <span className="text-[#D50000] block mt-4">A LA CARTA</span>
                 </h1>
-                <p className="text-xl text-[#CCCCCC] font-bold  tracking-wide font-racing">
+                <p className="text-base sm:text-lg text-[#CCCCCC] font-bold tracking-wide font-racing">
                   Exclusividad premium al precio justo
                 </p>
-                <p className="text-lg text-white leading-relaxed">
+                <p className="text-sm sm:text-base text-white leading-relaxed">
                   Importamos tu coche ideal desde Alemania con total garantía y
                   transparencia. Proceso completo de verificación y entrega
                   legal en España.
