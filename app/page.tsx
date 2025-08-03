@@ -94,13 +94,6 @@ export default function FMPremiumCarsLanding() {
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </Button>
               </Link>
-              <Button
-                variant="ghost"
-                size="icon"
-                className="md:hidden text-white"
-              >
-                <Menu className="w-5 h-5" />
-              </Button>
             </div>
           </div>
         </div>
