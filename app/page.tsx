@@ -21,7 +21,7 @@ import {
   Shield,
   Truck,
   Wrench,
-  Zap
+  Zap,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -145,7 +145,7 @@ export default function FMPremiumCarsLanding() {
 
             <div className="relative">
               <Image
-                src="/car1.png"
+                src="/car1.jpg"
                 alt="Coche deportivo importado desde Alemania"
                 width={800}
                 height={600}
@@ -260,7 +260,7 @@ export default function FMPremiumCarsLanding() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="relative group overflow-hidden rounded-lg">
               <Image
-                src="/imp1.png"
+                src="/imp1.jpg"
                 alt="BMW M3 importado"
                 width={600}
                 height={400}
@@ -276,7 +276,7 @@ export default function FMPremiumCarsLanding() {
 
             <div className="relative group overflow-hidden rounded-lg">
               <Image
-                src="/imp2.png"
+                src="/imp2.jpg"
                 alt="Mercedes AMG GT importado"
                 width={600}
                 height={400}
@@ -292,7 +292,7 @@ export default function FMPremiumCarsLanding() {
 
             <div className="relative group overflow-hidden rounded-lg">
               <Image
-                src="/imp3.png"
+                src="/imp3.jpg"
                 alt="Audi RS6 importado"
                 width={600}
                 height={400}
@@ -310,7 +310,7 @@ export default function FMPremiumCarsLanding() {
 
             <div className="relative group overflow-hidden rounded-lg">
               <Image
-                src="/imp4.png"
+                src="/imp4.jpg"
                 alt="Porsche 911 GT3 importado"
                 width={600}
                 height={400}
@@ -326,7 +326,7 @@ export default function FMPremiumCarsLanding() {
 
             <div className="relative group overflow-hidden rounded-lg">
               <Image
-                src="/imp5.png"
+                src="/imp5.jpg"
                 alt="BMW M4 Competition importado"
                 width={600}
                 height={400}
@@ -336,6 +336,22 @@ export default function FMPremiumCarsLanding() {
                 <div className="p-4 text-white">
                   <h3 className="font-racing text-lg ">Golf Variant</h3>
                   <p className="text-[#CCCCCC] text-sm ">2011 • Alemania</p>
+                </div>
+              </div>
+            </div>
+
+            <div className="relative group overflow-hidden rounded-lg">
+              <Image
+                src="/imp6.jpg"
+                alt="BMW M4 Competition importado"
+                width={600}
+                height={400}
+                className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+              />
+              <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-70 transition-opacity duration-300 flex items-end">
+                <div className="p-4 text-white">
+                  <h3 className="font-racing text-lg ">BMW 118i</h3>
+                  <p className="text-[#CCCCCC] text-sm ">2017 • Alemania</p>
                 </div>
               </div>
             </div>
@@ -515,7 +531,7 @@ export default function FMPremiumCarsLanding() {
             </div>
             <div className="relative">
               <Image
-                src="/car2.png"
+                src="/car2.jpg"
                 alt="Transporte de coches desde Alemania"
                 width={600}
                 height={500}
@@ -609,15 +625,20 @@ export default function FMPremiumCarsLanding() {
             <Card className="border-0 shadow-lg hover:shadow-xl transition-shadow text-center bg-black text-white">
               <CardHeader>
                 <div className="w-16 h-16 bg-[#D50000] rounded-sm flex items-center justify-center mx-auto mb-4">
-                  <Phone className="w-8 h-8 text-white" />
+                  <Image src="/wsp.png" alt="WhatsApp" width={35} height={35} />
                 </div>
                 <CardTitle className=" tracking-wide font-bold font-racing">
-                  Teléfono
+                  Whatsapp
                 </CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-2xl font-bold text-white mb-2">
-                  641-774-061
+                  <Link
+                    href="https://api.whatsapp.com/send?phone=34641774061"
+                    target="_blank"
+                  >
+                    641-774-061
+                  </Link>
                 </p>
                 <p className="text-[#CCCCCC]  tracking-wide">
                   Llamanos directamente
@@ -635,8 +656,10 @@ export default function FMPremiumCarsLanding() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold text-white mb-2">
-                  info@fmpremiumcars.com
+                <p className="text-sm font-semibold text-white mb-2">
+                  <Link href="mailto:info.fmpremiumcars@gmail.com">
+                    info.fmpremiumcars@gmail.com
+                  </Link>
                 </p>
                 <p className="text-[#CCCCCC]  tracking-wide">
                   Escribinos tu consulta
@@ -655,7 +678,12 @@ export default function FMPremiumCarsLanding() {
               </CardHeader>
               <CardContent>
                 <p className="text-lg font-semibold text-white mb-2">
-                  @fm.premiumcars
+                  <Link
+                    href="https://www.instagram.com/fm.premiumcars/"
+                    target="_blank"
+                  >
+                    @fm.premiumcars
+                  </Link>
                 </p>
                 <p className="text-[#CCCCCC]  tracking-wide">
                   Seguinos en redes
@@ -698,7 +726,14 @@ export default function FMPremiumCarsLanding() {
                 variant="outline"
                 className="text-lg px-8 py-6 border-[#CCCCCC] text-white hover:bg-[#CCCCCC] hover:text-black  tracking-wide font-bold bg-transparent"
               >
-                <Link href="tel:641774061">Llamar ahora: 641-774-061</Link>
+                <Link
+                  href="https://api.whatsapp.com/send?phone=34641774061"
+                  className="flex items-center gap-2"
+                  target="_blank"
+                >
+                  <Image src="/wsp.png" alt="WhatsApp" width={20} height={20} />
+                  641-774-061
+                </Link>
               </Button>
             </div>
             <p className="text-sm text-[#CCCCCC]  tracking-wide">
@@ -745,11 +780,20 @@ export default function FMPremiumCarsLanding() {
               <h3 className="font-semibold mb-4  tracking-wide font-racing">
                 Contacto
               </h3>
-              <ul className="space-y-2 text-[#CCCCCC]  tracking-wide">
-                <li>📞 641-774-061</li>
-                <li>✉️ info@fmpremiumcars.com</li>
-                <li>📱 @fm.premiumcars</li>
-              </ul>
+              <div className="space-y-2 gap-4 text-[#CCCCCC] tracking-wide">
+                <span className="flex items-center gap-1">
+                  <Phone className="w-4 h-4 text-white" />
+                  641-774-061
+                </span>
+                <span className="flex items-center gap-1">
+                  <Mail className="w-4 h-4 text-white" />
+                  <span className="text-sm">info.fmpremiumcars@gmail.com</span>
+                </span>
+                <span className="flex items-center gap-1">
+                  <Instagram className="w-4 h-4 text-white" />
+                  @fm.premiumcars
+                </span>
+              </div>
             </div>
 
             {/*             <div>
